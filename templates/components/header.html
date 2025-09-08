@@ -1,0 +1,55 @@
+{% load static %}
+<header class="relative">
+    <div class="py-6 flex items-center justify-between">
+        <a class="flex items-center gap-2 font-black" href="/">
+            <img src="{% static 'media/logo64.png' %}" class="w-8 md:w-12" />
+            <strong class="text-brand mt-2 md:text-xl">DATAFORGE</strong>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm" id="main-nav">
+            <a href="/" class="hover:text-brand">Home</a>
+            <a href="#services" class="hover:text-brand">Services</a>
+            <a href="#solutions" class="hover:text-brand">Solutions</a>
+            <a href="#contact" class="hover:text-brand">Contact Us</a>
+            <a href="#faqs" class="hover:text-brand">FAQs</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2">
+                <a href="#contact"
+                    class="group relative w-28 h-10 overflow-hidden rounded bg-brand text-sm font-semibold text-white">
+                    <div
+                        class="absolute inset-0 flex flex-col items-center gap-6 justify-between translate-y-2.5 group-hover:-translate-y-10 transition-all duration-300">
+                        <span>Get In Touch</span>
+                        <span class="text-2xl font-black">
+                            &rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <button type="button" class="py-2 px-4 rounded md:hidden" onclick="toggleMenu(this)"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="absolute top-18 left-0 w-full shadow-xs shadow-brand rounded-lg overflow-hidden">
+            <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out" id="menu-wrapper"
+                aria-expanded="false">
+                <div class="overflow-hidden">
+                    <div class="flex flex-col bg-[#1a1f24] p-8 gap-y-4 ">
+                        <a href="/" class="hover:text-brand">Home</a>
+                        <a href="#services" class="hover:text-brand">Services</a>
+                        <a href="#solutions" class="hover:text-brand">Solutions</a>
+                        <a href="#contact" class="hover:text-brand">Contact Us</a>
+                        <a href="#faqs" class="hover:text-brand">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>

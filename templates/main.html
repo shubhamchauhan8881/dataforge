@@ -1,0 +1,551 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DATAFORGE</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'media/logo32.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+</head>
+
+<body class="h-lvh">
+    <div id="body-scrollbar"
+        class="fixed right-1.5 sm:w-2 sm:right-2 lg:right-4 top-32 bottom-32 w-1 border border-gray-700 rounded-full overflow-hidden z-50">
+        <div id="scroll-progress" class="bg-brand"></div>
+    </div>
+
+    <div class="content-area h-full overflow-y-scroll">
+
+        <section class="relative  overflow-hidden">
+            <div
+                class="size-96 absolute right-4 top-10 bg-radial from-brand/50 via-brand/30 to-transparent blur-3xl opacity-50 rounded-full">
+            </div>
+            <div
+                class="size-72 absolute left-20 bottom-12 bg-radial from-brand/30 via-brand/50 to-transparent blur-3xl opacity-50 rounded-full">
+            </div>
+
+            <div class="container relative z-10">
+                {% include 'components/header.html' %}
+                {% include 'components/hero.html' %}
+            </div>
+
+            {% include 'components/marquee.html' %}
+
+        </section>
+
+        <section class="py-16 relative" id="services">
+
+            <div class="absolute inset-16 bg-radial from-brand/50 to-transparent  blur-3xl opacity-50">
+            </div>
+
+            <div class="container relative z-10">
+                <h2 class="text-3xl lg:text-4xl font-black text-center">Explore our Services</h2>
+                <p class="mt-3 text-center text-gray-300  max-w-prose mx-auto">At DataForge, we provide end-to-end
+                    business
+                    solutions through
+                    our specialized service divisions</p>
+
+                <div class="lg:grid space-y-8 lg:space-y-0 grid-cols-2 grid-rows-6 gap-4 place-items-center mt-16">
+
+                    <div class="rounded-2xl shadow-brand p-10 shadow-xs row-span-3 h-full">
+                        <div class="size-16 text-4xl rounded-lg bg-brand/15 text-brand grid place-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Fuel Your Outreach with Precision Data</h3>
+                        <p class="mt-2 text-sm text-gray-300">We provide human-verified contact data and
+                            personalized
+                            prospect lists, reducing bounce rates and ensuring
+                            accurate outreach. We help you connect with your Ideal Customer Profile and unlock
+                            growth
+                            opportunities.
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="badge">#ContactSourcing</span>
+                            <span class="badge">#LeadGeneration</span>
+                            <span class="badge">#PhoneVerification</span>
+
+                        </div>
+                    </div>
+
+                    <div class="row-span-2 rounded-2xl shadow-brand p-10 shadow-xs ">
+                        <div class="size-16 text-4xl rounded-lg bg-brand/15 text-brand grid place-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Simplify Your Workload with Expert Virtual Support</h3>
+                        <p class="mt-2 text-sm text-gray-300">We focus on delivering top-notch virtual assistant
+                            services designed to help businesses operate more
+                            smoothly. Our team of experienced professionals is here to handle administrative duties,
+                            oversee projects, and enhance
+                            overall productivity—so you can concentrate on what matters most.
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="badge">#ProjectManagement</span>
+                            <span class="badge">#ExecutiveAssistant</span>
+                            <span class="badge">#AdministrativeAssistant</span>
+
+                        </div>
+                    </div>
+
+                    <div class="rounded-2xl shadow-brand p-10 shadow-xs row-span-3 h-full col-start-1 row-start-4">
+                        <div class="size-16 text-4xl rounded-lg bg-brand/15 text-brand grid place-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                            </svg>
+
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Reliable Customer Care for Your Business</h3>
+                        <p class="mt-2 text-sm text-gray-300">We specialize in providing high-quality customer
+                            support solutions customized to fit your business
+                            goals. From handling inquiries and managing support tickets to boosting overall customer
+                            satisfaction, our skilled team
+                            is dedicated to assisting your customers with care and professionalism at every stage.
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="badge">#CustomerService</span>
+                            <span class="badge">#PhoneSupport</span>
+                            <span class="badge">#EmailSupport</span>
+                            <span class="badge">#LiveChat</span>
+                        </div>
+                    </div>
+
+                    <div class="row-span-2 col-start-2 row-start-3 rounded-2xl shadow-brand p-10 shadow-xs ">
+                        <div class="size-16 text-4xl rounded-lg bg-brand/15 text-brand grid place-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Powering Your Brand with Smart Marketing</h3>
+                        <p class="mt-2 text-sm text-gray-300">DATAFORGE is dedicated to helping businesses scale through
+                            impactful marketing strategies. Our skilled team
+                            creates customized campaigns designed to engage your audience, strengthen your brand
+                            presence, and deliver measurable
+                            results.
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="badge">#SocialMediaManagement</span>
+                            <span class="badge">#ContentCreation</span>
+                            <span class="badge">#DigitalMarketing</span>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-span-2 col-start-2 row-start-5">
+                        <div class="rounded-2xl shadow-brand p-10 shadow-xs ">
+                            <div class="size-16 text-4xl rounded-lg bg-brand/15 text-brand grid place-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-10">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                                </svg>
+
+                            </div>
+                            <h3 class="mt-4 font-semibold text-lg">Driving Innovation with Expert Development Services
+                            </h3>
+                            <p class="mt-2 text-sm text-gray-300">We provide end-to-end development support to help you
+                                fast-track projects and optimize workflows. From startups
+                                to established enterprises, our experienced developers bring expertise in web, mobile,
+                                and software solutions—empowering
+                                your business to innovate, scale, and succeed.
+                            </p>
+
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="badge">#WebDev</span>
+                                <span class="badge">#DevOps</span>
+                                <span class="badge">#SoftwareDevelopment</span>
+                                <span class="badge">#AppDev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 container">
+            <div id="solutions">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-black text-center">IT Solutions with DATAFORGE</h2>
+                    <p class="mt-3 text-center text-gray-300 max-w-prose mx-auto">DataForge accelerates digital
+                        transformation
+                        with
+                        expert web,
+                        mobile, and software development solutions that streamline
+                        workflows, boost performance, and drive innovation.</p>
+                </div>
+
+                <div
+                    class="mt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+                    {% for services in itServices %}
+                    {% include 'components/it_solutions_card.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+
+
+            <div class="my-40">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-black text-center">Our Work Process</h2>
+                    <p class="mt-3 text-center text-gray-300 max-w-prose mx-auto">At DataForge, we understand your
+                        needs,
+                        design
+                        tailored strategies, implement precise solutions, and optimize
+                        continuously—ensuring transparent communication, measurable results, and sustainable business
+                        growth.
+                    </p>
+                </div>
+                <ol class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- Step -->
+                    <li class="relative">
+                        <!-- Connector (hidden on first in each row large screens) -->
+                        <div class="hidden lg:block absolute top-9 left-[60%] right-[-25%] h-px bg-slate-300"></div>
+
+                        <div class="flex flex-col items-center text-center gap-4">
+                            <!-- Icon circle -->
+                            <div class="relative">
+                                <span
+                                    class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white">
+                                    <!-- Replace with your icon -->
+                                    <svg viewBox="0 0 24 24" class="h-9 w-9" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="6" y="4" width="12" height="16" rx="2" />
+                                    </svg>
+                                </span>
+                                <!-- Number badge -->
+                                <span
+                                    class="absolute -right-2 -bottom-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-sm font-semibold">01</span>
+                            </div>
+
+                            <h3 class="text-lg font-semibold">Consultation</h3>
+                            <p class="max-w-[22ch] text-sm text-gray-300">
+                                We analyze your goals and challenges, ensuring clear understanding to build effective,
+                                tailored solutions.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Step -->
+                    <li class="relative">
+                        <div class="hidden lg:block absolute top-9 left-[60%] right-[-25%] h-px bg-slate-200"></div>
+
+                        <div class="flex flex-col items-center text-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white">
+                                    <svg viewBox="0 0 24 24" class="h-9 w-9" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M12 3v3m0 12v3m9-9h-3M6 12H3m13.657-6.343l-2.121 2.121M8.464 15.536l-2.121 2.121m10.607 0l-2.121-2.121M8.464 8.464 6.343 6.343"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="absolute -right-2 -bottom-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-sm font-semibold">02</span>
+                            </div>
+
+                            <h3 class="text-lg font-semibold">Strategy</h3>
+                            <p class="max-w-[22ch] text-sm text-gray-300">
+                                Our team crafts customized strategies focused on efficiency, innovation, and measurable
+                                results to achieve success. </p>
+                        </div>
+                    </li>
+
+                    <!-- Step -->
+                    <li class="relative">
+                        <div class="hidden lg:block absolute top-9 left-[60%] right-[-25%] h-px bg-slate-200"></div>
+
+                        <div class="flex flex-col items-center text-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white">
+                                    <svg viewBox="0 0 24 24" class="h-9 w-9" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M7 10h10M7 14h7" />
+                                        <rect x="5" y="6" width="14" height="12" rx="2" />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="absolute -right-2 -bottom-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-sm font-semibold">03</span>
+                            </div>
+
+                            <h3 class="text-lg font-semibold">Implementation</h3>
+                            <p class="max-w-[22ch] text-sm text-gray-300">
+                                We execute solutions with precision, maintaining quality, timeliness, and adaptability
+                                to evolving business
+                                requirements. </p>
+                        </div>
+                    </li>
+
+                    <!-- Step -->
+                    <li class="relative">
+                        <!-- last has no right connector -->
+                        <div class="flex flex-col items-center text-center gap-4">
+                            <div class="relative">
+                                <span
+                                    class="inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white">
+                                    <svg viewBox="0 0 24 24" class="h-9 w-9" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="10" r="3" />
+                                        <path d="M7 18c1.5-2 8.5-2 10 0" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="absolute -right-2 -bottom-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white text-sm font-semibold">04</span>
+                            </div>
+
+                            <h3 class="text-lg font-semibold">Final Result</h3>
+                            <p class="max-w-[22ch] text-sm text-gray-300">
+                                You gain scalable results, sustainable growth, improved efficiency, and measurable
+                                impact for long-term business
+                                success. </p>
+                        </div>
+                    </li>
+                </ol>
+
+            </div>
+
+
+
+            <div id="contact">
+
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-black text-center">Get Your <span class="text-brand">Free
+                            Quote</span>
+                        Today!</h2>
+                    <p class="mt-3 text-center text-gray-300 max-w-prose mx-auto">Unlock tailored solutions for your
+                        business
+                        needs with a free quote from DataForge. Get clear pricing, expert guidance,
+                        and a strategy designed to drive growth.
+                    </p>
+                </div>
+
+                <!-- Wrapper -->
+                <div class="mt-8 grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-6">
+                    <aside
+                        class="relative rounded-3xl bg-[#1a1f24]/50 border border-gray-700 text-white p-6 lg:p-8 shadow-lg">
+
+                        <div class="relative flex justify-between flex-col h-full">
+                            <div>
+                                <h3 class="text-lg font-semibold">Address</h3>
+                                <p class="mt-2 text-slate-300 leading-relaxed text-sm">
+                                    Sector 62, Noida,
+                                    <br> Uttar Pradesh - 201309, India
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Contact</h3>
+                                <ul class="mt-2 space-y-1 text-slate-300 text-sm">
+                                    <li>Phone : +91 87954 79476</li>
+                                    <li>Email : <a href="mailto:dataforge.pvtltd@gmail.com"
+                                            target="_blank">dataforge.pvtltd@gmail.com</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Open Time</h3>
+                                <p class="mt-2 text-slate-300 text-sm">Monday - Friday : 10:00 AM - 05:00 PM</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Stay Connected</h3>
+                                <div class="mt-4 flex items-center gap-4 ">
+                                    <!-- Social round icon buttons -->
+                                    <a href="#"
+                                        class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition">
+                                        <!-- Facebook -->
+                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-white" fill="currentColor">
+                                            <path
+                                                d="M13.5 9H15V6h-1.5C11.57 6 10 7.57 10 9.5V11H8v3h2v6h3v-6h2.1l.4-3H13v-1.5c0-.28.22-.5.5-.5Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition">
+                                        <!-- X/Twitter -->
+                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-white" fill="currentColor">
+                                            <path
+                                                d="M3 4l7.5 8.7L3.6 20H6l5.1-5.7L15.8 20H21l-8.1-9.3L20.3 4H18l-4.6 5.2L9 4H3z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition">
+                                        <!-- Instagram -->
+                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-white" fill="currentColor">
+                                            <path
+                                                d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18.5 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zm5.75-2.75a.75.75 0 11-.75.75.75.75 0 01.75-.75z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 hover:bg-white/20 transition">
+                                        <!-- YouTube -->
+                                        <svg viewBox="0 0 24 24" class="h-5 w-5 text-white" fill="currentColor">
+                                            <path
+                                                d="M23 7.5a4 4 0 00-2.8-2.9C18.6 4 12 4 12 4s-6.6 0-8.2.6A4 4 0 001 7.5 41.5 41.5 0 000 12a41.5 41.5 0 001 4.5 4 4 0 002.8 2.9C5.4 20 12 20 12 20s6.6 0 8.2-.6A4 4 0 0023 16.5 41.5 41.5 0 0024 12a41.5 41.5 0 00-1-4.5zM10 15.5V8.5l6 3.5-6 3.5z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Right Form -->
+                    <form class="rounded-3xl p-8 lg:p-8">
+                        <div class="grid gap-5 sm:grid-cols-2">
+
+                            {% for field in ContactForm %}
+                            <div class="form-input {% if field.label == 'Message' %} sm:col-span-2 {% endif %}">
+                                <label class="block text-sm font-medium text-slate-300 mb-2">{{field.label}} *</label>
+                                {{field}}
+                            </div>
+                            {% endfor %}
+
+                        </div>
+
+                        <div class="mt-6">
+                            <button type="submit"
+                                class="inline-flex items-center bg-brand rounded-full bg-primary px-6 py-3 text-white text-sm font-semibold shadow-sm hover:shadow-md hover:-translate-y-0.5 transition cursor-pointer">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="min-h relative py-20 overflow-x-hidden">
+
+                <div
+                    class="size-96 text-brand absolute right-12 bottom-20 bg-radial from-brand via-brand/30 to-transparent blur-3xl rounded-full">
+                </div>
+
+                <div
+                    class="size-96 text-brand absolute left-12 top-20 bg-radial from-brand via-brand/30 to-transparent blur-3xl  rounded-full">
+                </div>
+
+                <div class="relative z-10 text-center h-lvh grid place-content-center place-items-center">
+                    <strong
+                        class="text-[6vmax] leading-tight font-extrabold max-w-4xl text-center block mx-auto">Discover
+                        the
+                        difference with our unmatched
+                        services.</strong>
+
+                    <div class="flex items-center gap-3 mt-16">
+                        <a href="#contact"
+                            class="group relative w-56 h-16 overflow-hidden rounded-full bg-brand text-sm font-semibold text-white">
+                            <div
+                                class="absolute inset-0 flex flex-col items-center gap-6 justify-between translate-y-4 group-hover:-translate-y-15 transition-all duration-300">
+                                <span class="text-2xl">Get In Touch</span>
+                                <span class="text-6xl font-black">
+                                    &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="faqs">
+                <h2 class="text-3xl lg:text-4xl font-black text-center">
+                    Question?
+                </h2>
+                <p class="mt-3 text-center text-gray-300 max-w-prose mx-auto">// FAQs</p>
+
+                <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="lg:col-span-2 space-y-4">
+                        {% for faq in faqs %}
+                        <div class="rounded-2xl border border-gray-700  shadow-sm">
+                            <button type="button"
+                                class="w-full px-5 py-4 text-left font-semibold flex items-center justify-between"
+                                aria-expanded="true" onclick="toggleFaq(this)">
+                                <span>{{faq.question}}</span>
+                                <svg class="h-5 w-5 text-slate-500 transition-transform rotate-45" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+                                </svg>
+                            </button>
+                            <div class="grid grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-in-out">
+                                <div class="overflow-hidden">
+                                    <p class="px-5 pb-5 text-slate-300 text-sm">
+                                        {{faq.answer}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Right column -->
+                    <div class="space-y-4">
+                        <!-- Help card -->
+                        <div
+                            class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-brand to-transparent text-white p-6 shadow-lg">
+
+                            <div class="">
+
+                                <h3 class="mt-4 text-lg font-semibold">You have different questions?</h3>
+                                <p class="mt-2 text-white/80 text-sm">Our team will answer all questions. We ensure a
+                                    quick
+                                    response.</p>
+                                <a href="#contact"
+                                    class="mt-5 inline-flex rounded-full bg-white text-slate-900 px-5 py-2 text-sm font-semibold shadow-sm hover:shadow-md">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 24/7 service card -->
+                        <div class="rounded-2xl border border-slate-700 p-6 shadow-sm">
+                            <div class="flex items-start gap-3">
+                                <span
+                                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                                        <path
+                                            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <p class="text-xs text-slate-300">Your Comfort, Our Priority</p>
+                                    <p class="mt-1 font-semibold">24/7 Service</p>
+                                    <p class="mt-1 text-sm text-slate-x">+91 87954 79476</p>
+                                    <p class="mt-1 text-sm text-slate-x">dataforge.pvtltd@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'components/footer.html' %}
+
+
+    </div>
+</body>
+<script src="{% static 'js/main.js' %}"></script>
+
+</html>
