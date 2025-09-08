@@ -414,7 +414,8 @@
                     </aside>
 
                     <!-- Right Form -->
-                    <form class="rounded-3xl p-8 lg:p-8">
+                    <form method="post" action="{% url 'home' %}" class="rounded-3xl p-8 lg:p-8">
+                        {% csrf_token %}
                         <div class="grid gap-5 sm:grid-cols-2">
 
                             {% for field in ContactForm %}
