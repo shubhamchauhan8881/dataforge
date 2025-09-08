@@ -10,7 +10,7 @@ class ItServices(models.Model):
 
     tags = models.CharField(max_length=100)
     title = models.CharField(max_length=50)
-    icon = models.ImageField(upload_to=upload_image)
+    image = models.ImageField(upload_to=upload_image)
 
     def __str__(self):
         return self.title
