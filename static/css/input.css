@@ -65,5 +65,13 @@
 
 .form-input input,
 .form-input textarea {
-	@apply w-full rounded-xl border border-slate-700 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand/60 focus:border-brand ring-brand/60;
+	@apply w-full rounded-xl border backdrop-blur-md border-slate-700 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand/60 focus:border-brand ring-brand/60;
+}
+
+.chip {
+	@apply px-2.5 py-1 text-xs rounded-full bg-white/10 text-slate-200 ring-1 ring-white/10;
+}
+
+@theme {
+	--shadow-glow: 0 10px 40px -10px rgba(56, 189, 248, 0.35);
 }
